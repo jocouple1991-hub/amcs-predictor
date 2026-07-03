@@ -2,14 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 // Team Logo Registry
 const TEAM_LOGOS = {
-  "United States": "🇺🇸", "Bosnia": "🇧🇦", "Spain": "🇪🇸", 
-  "Austria": "🇦🇹", "Portugal": "🇵🇹", "Croatia": "🇭🇷"
+  "Switzerland": "🇨🇭", "Algeria": "🇩🇿", 
+  "Australia": "🇦🇺", "Egypt": "🇪🇬", 
+  "Argentina": "🇦🇷", "Cape Verde": "🇨🇻"
 };
 
 const FIXTURES = [
-  { id: "wc-81", teamA: "United States", teamB: "Bosnia", kickoffTime: "2026-07-02T04:00:00+04:00" },
-  { id: "wc-84", teamA: "Spain", teamB: "Austria", kickoffTime: "2026-07-02T23:00:00+04:00" },
-  { id: "wc-83", teamA: "Portugal", teamB: "Croatia", kickoffTime: "2026-07-03T03:00:00+04:00" }
+  { id: "wc-85", teamA: "Switzerland", teamB: "Algeria", kickoffTime: "2026-07-03T07:00:00+04:00" },
+  { id: "wc-86", teamA: "Australia", teamB: "Egypt", kickoffTime: "2026-07-03T22:00:00+04:00" },
+  { id: "wc-87", teamA: "Argentina", teamB: "Cape Verde", kickoffTime: "2026-07-04T02:00:00+04:00" }
 ];
 
 export default function App() {
@@ -59,7 +60,7 @@ export default function App() {
 
             {/* Win-Draw-Win Prediction Layout */}
             <div className="grid grid-cols-3 gap-2">
-              {['WIN', 'DRAW', 'WIN'].map((type, i) => (
+              {['HOME WIN', 'DRAW', 'AWAY WIN'].map((type, i) => (
                 <button 
                   key={i}
                   onClick={() => handlePrediction(m.id, type)}

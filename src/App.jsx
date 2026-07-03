@@ -10,7 +10,8 @@ const TEAM_LOGOS = {
 const FIXTURES = [
   { id: "wc-85", teamA: "Switzerland", teamB: "Algeria", kickoffTime: "2026-07-03T07:00:00+04:00" },
   { id: "wc-86", teamA: "Australia", teamB: "Egypt", kickoffTime: "2026-07-03T22:00:00+04:00" },
-  { id: "wc-87", teamA: "Argentina", teamB: "Cape Verde", kickoffTime: "2026-07-04T02:00:00+04:00" }
+  { id: "wc-87", teamA: "Argentina", teamB: "Cape Verde", kickoffTime: "2026-07-04T02:00:00+04:00" },
+  { id: "wc-88", teamA: "Colombia", teamB: "Ghana", kickoffTime: "2026-07-04TT05:00:00+04:00" }
 ];
 
 export default function App() {

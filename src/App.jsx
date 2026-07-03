@@ -60,7 +60,7 @@ export default function App() {
 
             {/* Win-Draw-Win Prediction Layout */}
             <div className="grid grid-cols-3 gap-2">
-              {['HOME WIN', 'DRAW', 'AWAY WIN'].map((type, i) => (
+              {['WIN', 'DRAW', 'WIN'].map((type, i) => (
                 <button 
                   key={i}
                   onClick={() => handlePrediction(m.id, type)}
